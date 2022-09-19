@@ -6,7 +6,7 @@ class FeaturesRunner {
 
     @Karate.Test
     Karate testPets() {
-        return Karate.run("petstore").relativeTo(getClass());
+        return Karate.run("Feature1_CreatePetFlow").relativeTo(getClass());
     }
 
 }
