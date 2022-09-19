@@ -1,0 +1,28 @@
+{
+  "playground": {
+    "menuOptionDynamicId": "{a}Dynamic ID",
+    "menuOptionClassAttribute": "{a}Class Attribute",
+    "menuOptionHiddenLayers": "{a}Hidden Layers",
+    "menuOptionLoadDelay": "{a}Load Delay",
+    "menuOptionAjaxData": "{a}AJAX Data",
+    "menuOptionClientSideDelay": "{a}Client Side Delay",
+    "menuOptionClick": "{a}Click",
+    "menuTextInput": "{a}Text Input",
+    "menuScrollbars": "{a}Scrollbars",
+    "buttonDynamicID": "//button[contains(text(),'Button with Dynamic ID')]",
+    "btnPrimaryButton": "//button[contains(@class,'btn-primary')]",
+    "button": "//button[contains(@type,'button')]",
+    "buttonGreenButton": "//button[contains(@id,'greenButton')]",
+    "buttonBlueButton": "//button[contains(@id,'blueButton')]",
+    "buttonAppearingAfterDelay": "//button[contains(text(),'Button Appearing After Delay')]",
+    "textboxDataLoadedAJAX": "//p[contains(text(),'Data loaded with AJAX get request.')]",
+    "textboxDataClientSideDelay": "//p[contains(text(),'Data calculated on the client side.')]",
+    "buttonTriggeringAJAXRequest": "//button[contains(text(),'Button Triggering AJAX Request')]",
+    "buttonTriggeringClientSideDelay": "//button[contains(text(),'Button Triggering Client Side Logic')]",
+    "buttonIgnoresDOMClickEvent": "//button[contains(text(),'Button That Ignores DOM Click Event')]",
+    "buttonChangeBasedNameInput": "//button[contains(@id,'updatingButton')]",
+    "caixaTextInput": "//input[contains(@id,'newButtonName')]",
+    "caixaScroll": "//div[contains(@style,'scroll')]",
+    "hidingButton": "//button[contains(text(),'Hiding Button')]"
+  }
+}
