@@ -1,3 +1,4 @@
+@Playground
 Feature: Common Behaviours for Different features
 
   Background:

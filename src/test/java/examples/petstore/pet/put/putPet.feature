@@ -1,3 +1,4 @@
+@Pets
 Feature: Petstore PUT Features
 
   Background:

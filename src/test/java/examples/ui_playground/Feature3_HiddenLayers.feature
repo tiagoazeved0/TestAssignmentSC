@@ -1,3 +1,4 @@
+@Playground
 Feature: UI Testing Playground
 
   Background:

@@ -1,3 +1,4 @@
+@Pets
 Feature: Petstore POST Features
 
   Background:

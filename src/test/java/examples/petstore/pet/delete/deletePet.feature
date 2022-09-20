@@ -1,7 +1,9 @@
+@Pets
 Feature: Pets DELETE Features
 
   Background:
     * url 'https://petstore.swagger.io/v2/'
+
 
   Scenario: Delete an existing pet and ensuring that the operation can't be done more than once (with the same petId)
 

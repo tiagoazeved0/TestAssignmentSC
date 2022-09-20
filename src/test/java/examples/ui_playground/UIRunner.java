@@ -6,7 +6,7 @@ class UIRunner {
 
     @Karate.Test
     Karate testUI_Playground() {
-        return Karate.run("demo-01", "demo-02").relativeTo(getClass());
+        return Karate.run().relativeTo(getClass());
     }
 
 }

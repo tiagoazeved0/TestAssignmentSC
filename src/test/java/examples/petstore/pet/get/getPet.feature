@@ -1,3 +1,4 @@
+@Pets
 Feature: Pets GET Features
 
   Background:
