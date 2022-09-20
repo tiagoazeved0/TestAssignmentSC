@@ -6,6 +6,6 @@ class PetstoreRunner {
 
     @Karate.Test
     Karate testTags() {
-        return Karate.run().tags("@Pets").relativeTo(getClass());
+        return Karate.run("classpath:examples/petstore").tags().relativeTo(getClass());
     }
 }

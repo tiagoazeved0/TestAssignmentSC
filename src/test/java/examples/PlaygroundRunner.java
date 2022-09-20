@@ -6,6 +6,6 @@ class PlaygroundRunner {
 
     @Karate.Test
     Karate testTags() {
-        return Karate.run().tags("@Playground").relativeTo(getClass());
+        return Karate.run("classpath:examples/ui_playground").tags().relativeTo(getClass());
     }
 }
