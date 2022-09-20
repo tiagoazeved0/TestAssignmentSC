@@ -1,4 +1,4 @@
-Feature: User PUT Features
+Feature: API Testing Petstore
 
   Background:
 

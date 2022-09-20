@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: examples.runners.FeaturesRunner
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 149.705 s <<< FAILURE! - in examples.runners.FeaturesRunner
+testTags[4][2]  Time elapsed: 0.762 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 507, url: https://petstore.swagger.io/v2/pet/9223372016900020566, response: 
+{"code":404,"type":"unknown","message":"not found"}
+classpath:examples/petstore/pet/post/postPet.feature:37
+
+testTags[6][1]  Time elapsed: 0.528 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 480, url: https://petstore.swagger.io/v2/store/order/2209180275, response: 
+{"code":404,"type":"unknown","message":"Order Not Found"}
+classpath:examples/petstore/store/delete/deleteStore.feature:12
+
+testTags[7][1]  Time elapsed: 0.492 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 482, url: https://petstore.swagger.io/v2/store/order/2209180269, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:examples/petstore/store/get/getStore.feature:14
+
+testTags[9][1]  Time elapsed: 2.07 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+syntax error, expected '==' for match
+classpath:examples/petstore/user/delete/deleteUser.feature:59
+
+testTags[10][2]  Time elapsed: 0.473 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 462, url: https://petstore.swagger.io/v2/user/zbxt5dg6, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:examples/petstore/user/get/getUser.feature:32
+
+testTags[12][1]  Time elapsed: 1.487 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+syntax error, expected '==' for match
+classpath:examples/petstore/user/put/putUser.feature:76
+

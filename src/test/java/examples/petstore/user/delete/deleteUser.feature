@@ -1,4 +1,4 @@
-Feature: User DELETE Features
+Feature: API Testing Petstore
 
   Background:
 

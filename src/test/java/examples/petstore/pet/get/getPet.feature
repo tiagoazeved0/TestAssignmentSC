@@ -1,5 +1,5 @@
 @Pets
-Feature: Pets GET Features
+Feature: API Testing Petstore
 
   Background:
     * url 'https://petstore.swagger.io/v2/'

@@ -1,0 +1,7 @@
+examples\ui_playground\UIRunner.class
+examples\petstore\store\StoreRunner.class
+examples\runners\FeaturesRunner.class
+examples\runners\PetstoreRunner.class
+examples\petstore\user\UserRunner.class
+examples\runners\PlaygroundRunner.class
+examples\petstore\pet\PetsRunner.class

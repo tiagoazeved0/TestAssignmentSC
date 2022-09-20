@@ -1,4 +1,4 @@
-Feature: User GET Features
+Feature: API Testing Petstore
 
   Background:
 

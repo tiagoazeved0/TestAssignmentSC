@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.runners.FeaturesRunner" time="149.705" tests="29" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\tiago.mina-azevedo\Documents\karateStuff\TestAssignmentSC\target\test-classes;C:\Users\tiago.mina-azevedo\Documents\karateStuff\TestAssignmentSC\target\classes;C:\Users\tiago.mina-azevedo\.m2\repository\com\intuit\karate\karate-junit5\1.2.0\karate-junit5-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\intuit\karate\karate-core\1.2.0\karate-core-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\tiago.mina-azevedo\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\linecorp\armeria\armeria\1.13.4\armeria-1.13.4.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\micrometer\micrometer-core\1.7.6\micrometer-core-1.7.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-http2\4.1.70.Final\netty-codec-http2-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-haproxy\4.1.70.Final\netty-codec-haproxy-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver-dns\4.1.70.Final\netty-resolver-dns-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-dns\4.1.70.Final\netty-codec-dns-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.70.Final\netty-resolver-dns-native-macos-4.1.70.Final-osx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.70.Final\netty-resolver-dns-classes-macos-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-native-epoll\4.1.70.Final\netty-transport-native-epoll-4.1.70.Final-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.44.Final\netty-tcnative-boringssl-static-2.0.44.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-handler-proxy\4.1.70.Final\netty-handler-proxy-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-socks\4.1.70.Final\netty-codec-socks-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.6.0\brotli4j-1.6.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.6.0\native-windows-x86_64-1.6.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\tiago.mina-azevedo\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\tiago.mina-azevedo\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\antlr\antlr4-runtime\4.9.2\antlr4-runtime-4.9.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\tiago.mina-azevedo\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\github\classgraph\classgraph\4.8.108\classgraph-4.8.108.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\intuit\karate\karate-robot\1.2.0\karate-robot-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\java\dev\jna\jna-platform\5.5.0\jna-platform-5.5.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\java\dev\jna\jna\5.5.0\jna-5.5.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacv\1.5.3\javacv-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-graphics\11\javafx-graphics-11.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-graphics\11\javafx-graphics-11-win.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11-win.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv-platform\4.3.0-1.5.3\opencv-platform-4.3.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas-platform\0.3.9-1.5.3\openblas-platform-0.3.9-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-ios-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-ios-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-ios-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-ios-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract-platform\4.1.1-1.5.3\tesseract-platform-4.1.1-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica-platform\1.79.0-1.5.3\leptonica-platform-1.79.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg-platform\4.2.2-1.5.3\ffmpeg-platform-4.2.2-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp-platform\1.5.3\javacpp-platform-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-ios-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-ios-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\masterthought\cucumber-reporting\3.8.0\cucumber-reporting-3.8.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\logging\log4j\log4j-api\2.6\log4j-api-2.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\logging\log4j\log4j-core\2.6\log4j-core-2.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.5\jackson-databind-2.8.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.5\jackson-core-2.8.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\tiago.mina-azevedo\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\tiago.mina-azevedo\.m2\repository\joda-time\joda-time\2.9.6\joda-time-2.9.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\lingala\zip4j\zip4j\1.3.2\zip4j-1.3.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\jsoup\jsoup\1.10.1\jsoup-1.10.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20160924.1\owasp-java-html-sanitizer-20160924.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PT"/>
+    <property name="sun.boot.library.path" value="C:\tools\jdk-11.0.15.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\TIAGO~1.MIN\AppData\Local\Temp\surefire10926592204473538425\surefirebooter16477133948034779651.jar C:\Users\tiago.mina-azevedo\AppData\Local\Temp\surefire10926592204473538425 2022-09-20T15-33-27_779-jvmRun1 surefire10614853601023997291tmp surefire_010083222619311290600tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="FeaturesRunner"/>
+    <property name="surefire.test.class.path" value="C:\Users\tiago.mina-azevedo\Documents\karateStuff\TestAssignmentSC\target\test-classes;C:\Users\tiago.mina-azevedo\Documents\karateStuff\TestAssignmentSC\target\classes;C:\Users\tiago.mina-azevedo\.m2\repository\com\intuit\karate\karate-junit5\1.2.0\karate-junit5-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\intuit\karate\karate-core\1.2.0\karate-core-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\tiago.mina-azevedo\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\linecorp\armeria\armeria\1.13.4\armeria-1.13.4.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\micrometer\micrometer-core\1.7.6\micrometer-core-1.7.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-http2\4.1.70.Final\netty-codec-http2-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-haproxy\4.1.70.Final\netty-codec-haproxy-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver-dns\4.1.70.Final\netty-resolver-dns-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-dns\4.1.70.Final\netty-codec-dns-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.70.Final\netty-resolver-dns-native-macos-4.1.70.Final-osx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.70.Final\netty-resolver-dns-classes-macos-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-native-epoll\4.1.70.Final\netty-transport-native-epoll-4.1.70.Final-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.44.Final\netty-tcnative-boringssl-static-2.0.44.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-handler-proxy\4.1.70.Final\netty-handler-proxy-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\netty\netty-codec-socks\4.1.70.Final\netty-codec-socks-4.1.70.Final.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.6.0\brotli4j-1.6.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.6.0\native-windows-x86_64-1.6.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\tiago.mina-azevedo\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\tiago.mina-azevedo\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\antlr\antlr4-runtime\4.9.2\antlr4-runtime-4.9.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\tiago.mina-azevedo\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\io\github\classgraph\classgraph\4.8.108\classgraph-4.8.108.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\intuit\karate\karate-robot\1.2.0\karate-robot-1.2.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\java\dev\jna\jna-platform\5.5.0\jna-platform-5.5.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\java\dev\jna\jna\5.5.0\jna-5.5.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacv\1.5.3\javacv-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-graphics\11\javafx-graphics-11.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-graphics\11\javafx-graphics-11-win.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11-win.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv-platform\4.3.0-1.5.3\opencv-platform-4.3.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas-platform\0.3.9-1.5.3\openblas-platform-0.3.9-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-ios-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-ios-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\openblas\0.3.9-1.5.3\openblas-0.3.9-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-ios-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-ios-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\opencv\4.3.0-1.5.3\opencv-4.3.0-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract-platform\4.1.1-1.5.3\tesseract-platform-4.1.1-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica-platform\1.79.0-1.5.3\leptonica-platform-1.79.0-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\leptonica\1.79.0-1.5.3\leptonica-1.79.0-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\tesseract\4.1.1-1.5.3\tesseract-4.1.1-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg-platform\4.2.2-1.5.3\ffmpeg-platform-4.2.2-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp-platform\1.5.3\javacpp-platform-1.5.3.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-ios-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-ios-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\javacpp\1.5.3\javacpp-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-arm.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-android-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-armhf.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-arm64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-linux-ppc64le.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-macosx-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-windows-x86.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\bytedeco\ffmpeg\4.2.2-1.5.3\ffmpeg-4.2.2-1.5.3-windows-x86_64.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\masterthought\cucumber-reporting\3.8.0\cucumber-reporting-3.8.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\logging\log4j\log4j-api\2.6\log4j-api-2.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\logging\log4j\log4j-core\2.6\log4j-core-2.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.5\jackson-databind-2.8.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.5\jackson-core-2.8.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\tiago.mina-azevedo\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\tiago.mina-azevedo\.m2\repository\joda-time\joda-time\2.9.6\joda-time-2.9.6.jar;C:\Users\tiago.mina-azevedo\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\tiago.mina-azevedo\.m2\repository\net\lingala\zip4j\zip4j\1.3.2\zip4j-1.3.2.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\tiago.mina-azevedo\.m2\repository\org\jsoup\jsoup\1.10.1\jsoup-1.10.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20160924.1\owasp-java-html-sanitizer-20160924.1.jar;C:\Users\tiago.mina-azevedo\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\tiago.mina-azevedo"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="C:\tools\jdk-11.0.15.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\tiago.mina-azevedo\Documents\karateStuff\TestAssignmentSC"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\TIAGO~1.MIN\AppData\Local\Temp\surefire10926592204473538425\surefirebooter16477133948034779651.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15.1+2-LTS-10"/>
+    <property name="user.name" value="tiago.mina-azevedo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\tiago.mina-azevedo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\TIAGO~1.MIN\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.15.1"/>
+    <property name="user.dir" value="C:\Users\tiago.mina-azevedo\Documents\karateStuff\TestAssignmentSC"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\tools\jdk-11.0.15.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files\RSA SecurID Token Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\tiago.mina-azevedo\maven\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\tiago.mina-azevedo;C:\tools\jdk-11.0.15.1\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\tiago.mina-azevedo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tiago.mina-azevedo\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Users\tiago.mina-azevedo\maven\apache-maven-3.8.6\bin;C:\tools\jdk-11.0.15.1\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.15.1+2-LTS-10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testTags[1][1]" classname="examples.runners.FeaturesRunner" time="4.435"/>
+  <testcase name="testTags[2][1]" classname="examples.runners.FeaturesRunner" time="1.83"/>
+  <testcase name="testTags[3][1]" classname="examples.runners.FeaturesRunner" time="1.082"/>
+  <testcase name="testTags[3][2]" classname="examples.runners.FeaturesRunner" time="1.182"/>
+  <testcase name="testTags[4][1]" classname="examples.runners.FeaturesRunner" time="0.291"/>
+  <testcase name="testTags[4][2]" classname="examples.runners.FeaturesRunner" time="0.762">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 507, url: https://petstore.swagger.io/v2/pet/9223372016900020566, response: &#10;{&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;not found&quot;}&#10;classpath:examples/petstore/pet/post/postPet.feature:37" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 507, url: https://petstore.swagger.io/v2/pet/9223372016900020566, response: 
+{"code":404,"type":"unknown","message":"not found"}
+classpath:examples/petstore/pet/post/postPet.feature:37
+</failure>
+    <system-out><![CDATA[15:33:38.770 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:39.001 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet/9223372016900020566
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 26
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+name=Test&status=newStatus
+
+15:33:39.509 [main] DEBUG com.intuit.karate - response time in milliseconds: 507
+1 < 404
+1 < Date: Tue, 20 Sep 2022 14:33:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"not found"}
+
+15:33:39.510 [main] ERROR com.intuit.karate - classpath:examples/petstore/pet/post/postPet.feature:37
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 507, url: https://petstore.swagger.io/v2/pet/9223372016900020566, response: 
+{"code":404,"type":"unknown","message":"not found"}
+classpath:examples/petstore/pet/post/postPet.feature:37
+]]></system-out>
+  </testcase>
+  <testcase name="testTags[4][3]" classname="examples.runners.FeaturesRunner" time="1.108"/>
+  <testcase name="testTags[5][1]" classname="examples.runners.FeaturesRunner" time="0.571"/>
+  <testcase name="testTags[6][1]" classname="examples.runners.FeaturesRunner" time="0.528">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 480, url: https://petstore.swagger.io/v2/store/order/2209180275, response: &#10;{&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;Order Not Found&quot;}&#10;classpath:examples/petstore/store/delete/deleteStore.feature:12" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 480, url: https://petstore.swagger.io/v2/store/order/2209180275, response: 
+{"code":404,"type":"unknown","message":"Order Not Found"}
+classpath:examples/petstore/store/delete/deleteStore.feature:12
+</failure>
+    <system-out><![CDATA[15:33:41.210 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:41.214 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/store/order/2209180275
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:33:41.694 [main] DEBUG com.intuit.karate - response time in milliseconds: 480
+1 < 404
+1 < Date: Tue, 20 Sep 2022 14:33:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"Order Not Found"}
+
+15:33:41.696 [main] ERROR com.intuit.karate - classpath:examples/petstore/store/delete/deleteStore.feature:12
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 480, url: https://petstore.swagger.io/v2/store/order/2209180275, response: 
+{"code":404,"type":"unknown","message":"Order Not Found"}
+classpath:examples/petstore/store/delete/deleteStore.feature:12
+---------------------------------------------------------
+feature: classpath:examples/petstore/store/delete/deleteStore.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0,4836
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testTags[7][1]" classname="examples.runners.FeaturesRunner" time="0.492">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 482, url: https://petstore.swagger.io/v2/store/order/2209180269, response: &#10;{&quot;code&quot;:1,&quot;type&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Order not found&quot;}&#10;classpath:examples/petstore/store/get/getStore.feature:14" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 482, url: https://petstore.swagger.io/v2/store/order/2209180269, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:examples/petstore/store/get/getStore.feature:14
+</failure>
+    <system-out><![CDATA[15:33:41.739 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:41.741 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/2209180269
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:33:42.224 [main] DEBUG com.intuit.karate - response time in milliseconds: 482
+1 < 404
+1 < Date: Tue, 20 Sep 2022 14:33:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Order not found"}
+
+15:33:42.226 [main] ERROR com.intuit.karate - classpath:examples/petstore/store/get/getStore.feature:14
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 482, url: https://petstore.swagger.io/v2/store/order/2209180269, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:examples/petstore/store/get/getStore.feature:14
+]]></system-out>
+  </testcase>
+  <testcase name="testTags[7][2]" classname="examples.runners.FeaturesRunner" time="0.518"/>
+  <testcase name="testTags[8][1]" classname="examples.runners.FeaturesRunner" time="0.534"/>
+  <testcase name="testTags[9][1]" classname="examples.runners.FeaturesRunner" time="2.07">
+    <failure message="syntax error, expected &apos;==&apos; for match&#10;classpath:examples/petstore/user/delete/deleteUser.feature:59" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+syntax error, expected '==' for match
+classpath:examples/petstore/user/delete/deleteUser.feature:59
+</failure>
+    <system-out><![CDATA[15:33:43.286 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:43.624 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 134
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"d714ed2s","firstName":"Denita","lastName":"Ziemann","email":"yqpcfz70x@gmail.com","password":"wl34796n","phone":92552201}
+
+15:33:44.103 [main] DEBUG com.intuit.karate - response time in milliseconds: 479
+1 < 200
+1 < Date: Tue, 20 Sep 2022 14:33:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"9222968140497263577"}
+
+15:33:44.124 [main] INFO  com.intuit.karate - [print] https://petstore.swagger.io/v2/user/login 
+15:33:44.126 [main] DEBUG com.intuit.karate - request:
+2 > GET https://petstore.swagger.io/v2/user/login
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:33:44.608 [main] DEBUG com.intuit.karate - response time in milliseconds: 482
+2 < 200
+2 < Date: Tue, 20 Sep 2022 14:33:44 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 < X-Expires-After: Tue Sep 20 15:33:44 UTC 2022
+2 < X-Rate-Limit: 5000
+2 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"logged in user session:1663684424603"}
+
+15:33:44.610 [main] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "logged in user session:1663684424603"
+}
+ 
+15:33:44.798 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://petstore.swagger.io/v2//user/d714ed2s
+3 > Host: petstore.swagger.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+15:33:45.284 [main] DEBUG com.intuit.karate - response time in milliseconds: 486
+3 < 200
+3 < Date: Tue, 20 Sep 2022 14:33:45 GMT
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"d714ed2s"}
+
+15:33:45.287 [main] ERROR com.intuit.karate - classpath:examples/petstore/user/delete/deleteUser.feature:59
+* match response.type = "unknown"
+syntax error, expected '==' for match
+classpath:examples/petstore/user/delete/deleteUser.feature:59
+---------------------------------------------------------
+feature: classpath:examples/petstore/user/delete/deleteUser.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 1,9985
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testTags[10][1]" classname="examples.runners.FeaturesRunner" time="0.477"/>
+  <testcase name="testTags[10][2]" classname="examples.runners.FeaturesRunner" time="0.473">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 462, url: https://petstore.swagger.io/v2/user/zbxt5dg6, response: &#10;{&quot;code&quot;:1,&quot;type&quot;:&quot;error&quot;,&quot;message&quot;:&quot;User not found&quot;}&#10;classpath:examples/petstore/user/get/getUser.feature:32" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 462, url: https://petstore.swagger.io/v2/user/zbxt5dg6, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:examples/petstore/user/get/getUser.feature:32
+</failure>
+    <system-out><![CDATA[15:33:45.836 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:45.837 [main] INFO  com.intuit.karate - [print] https://petstore.swagger.io/v2/user/zbxt5dg6 
+15:33:45.839 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/user/zbxt5dg6
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:33:46.301 [main] DEBUG com.intuit.karate - response time in milliseconds: 462
+1 < 404
+1 < Date: Tue, 20 Sep 2022 14:33:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"User not found"}
+
+15:33:46.302 [main] ERROR com.intuit.karate - classpath:examples/petstore/user/get/getUser.feature:32
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 462, url: https://petstore.swagger.io/v2/user/zbxt5dg6, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:examples/petstore/user/get/getUser.feature:32
+]]></system-out>
+  </testcase>
+  <testcase name="testTags[10][3]" classname="examples.runners.FeaturesRunner" time="0.507"/>
+  <testcase name="testTags[11][1]" classname="examples.runners.FeaturesRunner" time="0.5"/>
+  <testcase name="testTags[11][2]" classname="examples.runners.FeaturesRunner" time="0.567"/>
+  <testcase name="testTags[12][1]" classname="examples.runners.FeaturesRunner" time="1.487">
+    <failure message="syntax error, expected &apos;==&apos; for match&#10;classpath:examples/petstore/user/put/putUser.feature:76" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+syntax error, expected '==' for match
+classpath:examples/petstore/user/put/putUser.feature:76
+</failure>
+    <system-out><![CDATA[15:33:47.886 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:47.911 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 132
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"yhqz69ec","firstName":"Rich","lastName":"Marvin","email":"c37vhiocp@gmail.com","password":"xlcfqton","phone":610173580}
+
+15:33:48.368 [main] DEBUG com.intuit.karate - response time in milliseconds: 457
+1 < 200
+1 < Date: Tue, 20 Sep 2022 14:33:48 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"9222968140497263578"}
+
+15:33:48.370 [main] INFO  com.intuit.karate - [print] https://petstore.swagger.io/v2/user/login 
+15:33:48.371 [main] DEBUG com.intuit.karate - request:
+2 > GET https://petstore.swagger.io/v2/user/login
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:33:48.831 [main] DEBUG com.intuit.karate - response time in milliseconds: 459
+2 < 200
+2 < Date: Tue, 20 Sep 2022 14:33:48 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 < X-Expires-After: Tue Sep 20 15:33:48 UTC 2022
+2 < X-Rate-Limit: 5000
+2 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"logged in user session:1663684428829"}
+
+15:33:48.833 [main] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "logged in user session:1663684428829"
+}
+ 
+15:33:48.843 [main] DEBUG com.intuit.karate - request:
+3 > PUT https://petstore.swagger.io/v2//user/yhqz69ec
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 131
+3 > Host: petstore.swagger.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+3 > Accept-Encoding: gzip,deflate
+{"username":"yhqz69ec","firstName":"Gia","lastName":"Bednar","email":"8pllc17fa@gmail.com","password":"xlcfqton","phone":610173580}
+
+15:33:49.306 [main] DEBUG com.intuit.karate - response time in milliseconds: 461
+3 < 200
+3 < Date: Tue, 20 Sep 2022 14:33:49 GMT
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"9222968140497263579"}
+
+15:33:49.308 [main] ERROR com.intuit.karate - classpath:examples/petstore/user/put/putUser.feature:76
+* match response.type = "unknown"
+syntax error, expected '==' for match
+classpath:examples/petstore/user/put/putUser.feature:76
+---------------------------------------------------------
+feature: classpath:examples/petstore/user/put/putUser.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 1,4195
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testTags[13][1]" classname="examples.runners.FeaturesRunner" time="0.024"/>
+  <testcase name="testTags[14][1]" classname="examples.runners.FeaturesRunner" time="7.265"/>
+  <testcase name="testTags[15][1]" classname="examples.runners.FeaturesRunner" time="11.499"/>
+  <testcase name="testTags[16][1]" classname="examples.runners.FeaturesRunner" time="10.674"/>
+  <testcase name="testTags[17][1]" classname="examples.runners.FeaturesRunner" time="12.694"/>
+  <testcase name="testTags[18][1]" classname="examples.runners.FeaturesRunner" time="27.254"/>
+  <testcase name="testTags[19][1]" classname="examples.runners.FeaturesRunner" time="21.777"/>
+  <testcase name="testTags[20][1]" classname="examples.runners.FeaturesRunner" time="6.654"/>
+  <testcase name="testTags[21][1]" classname="examples.runners.FeaturesRunner" time="20.479"/>
+  <testcase name="testTags[22][1]" classname="examples.runners.FeaturesRunner" time="11.049"/>
+</testsuite>
