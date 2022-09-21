@@ -2,7 +2,7 @@
 Feature: UI Testing Playground
 
   Background:
-    * configure driver = { type: 'chrome' }
+    * configure driver = { type: 'chrome', showDriverLog: false }
     * def playground = read('common.feature')
     * call playground
 

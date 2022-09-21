@@ -9,6 +9,9 @@
     "menuOptionClick": "{a}Click",
     "menuTextInput": "{a}Text Input",
     "menuScrollbars": "{a}Scrollbars",
+    "menuDynamicTable": "{a}Dynamic Table",
+    "menuVerifyText": "{a}Verify Text",
+    "menuProgressBar": "{a}Progress Bar",
     "buttonDynamicID": "//button[contains(text(),'Button with Dynamic ID')]",
     "btnPrimaryButton": "//button[contains(@class,'btn-primary')]",
     "button": "//button[contains(@type,'button')]",
@@ -23,6 +26,12 @@
     "buttonChangeBasedNameInput": "//button[contains(@id,'updatingButton')]",
     "caixaTextInput": "//input[contains(@id,'newButtonName')]",
     "caixaScroll": "//div[contains(@style,'scroll')]",
-    "hidingButton": "//button[contains(text(),'Hiding Button')]"
+    "hidingButton": "//button[contains(text(),'Hiding Button')]",
+    "valueDynamicTableChromeCPUValue": "//span[contains(text(),'Chrome')]/ancestor::div[@role='row']/child::span[contains(text(),'%')]",
+    "valueChromeCPU": "//p[contains(text(),'Chrome CPU:')]",
+    "textVerifyText": "//span[contains(text(),'Welcome ')]",
+    "buttonStart": "//button[contains(text(),'Start')]",
+    "buttonStop": "//button[contains(text(),'Stop')]",
+    "progressBar": "//div[contains(@id,'progressBar')]"
   }
 }

@@ -6,9 +6,11 @@ Feature: UI Testing Playground
     * def playground = read('common.feature')
     * call playground
 
-  Scenario: UI Testing Playground - Feature 4 - LoadDelay - Waiting for the Load Delay to find desired button
+  Scenario: UI Testing Playground - Feature 11 - Verify Text
+
+    * def welcomeText = 'Welcome'
 
     Given driver "http://www.uitestingplayground.com/home"
-    And click(playground.menuOptionLoadDelay)
-    And waitFor(playground.buttonAppearingAfterDelay)
+    And click(playground.menuVerifyText)
     And sleep(2000)
+    * match text(playground.textVerifyText) contains welcomeText

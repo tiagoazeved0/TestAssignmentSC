@@ -1,6 +1,3 @@
-examples\ui_playground\UIRunner.class
 examples\runners\AllFeaturesRunner.class
-examples\petstore\store\StoreRunner.class
-examples\petstore\user\UserRunner.class
 examples\runners\APITestsRunner.class
 examples\runners\UITestsRunner.class
