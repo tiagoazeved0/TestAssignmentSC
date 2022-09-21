@@ -7,7 +7,6 @@ Feature: API Testing Petstore
 
   Scenario: Delete an existing pet and ensuring that the operation can't be done more than once (with the same petId)
 
-    # This flow consists in 3 HTTP Requests:
     # POST - Create a new Pet
     # DELETE - Delete the created pet using petId
     # DELETE - Delete the same pet using petId and verifying if the response has an error code.

@@ -1,14 +1,25 @@
 @Pets
-Feature: Petstore PUT Features
+Feature: API Testing Petstore
 
   Background:
     * url 'https://petstore.swagger.io/v2/'
 
-  Scenario: Update an existing pet using PUT request
+  Scenario: Create a Pet and Update it using PUT request
 
+    # POST - Create a new Pet with 'name' and 'status'
     # PUT - Update an existing pet with body object required
 
-    * def petId = 9223372016900020851
+    * def name = 'Kitty McGee'
+    * def status = 'available'
+    Given path 'pet/'
+    And request { name: '#(name)', status: '#(status)' }
+    When method post
+    Then status 200
+    * match responseStatus == 200
+    * match response.name == name
+    * match response.status == status
+    * def petId = response.id
+
     * def updatedName = 'PutTestNewName'
     * def updatedStatus = 'newStatusPutTest'
     * def petBody =
@@ -19,7 +30,7 @@ Feature: Petstore PUT Features
     "id": 0,
     "name": "string"
   },
-  "name": "PutTestNewName",
+  "name": "#(updatedName)",
   "photoUrls": [
     "string"
   ],
@@ -29,7 +40,7 @@ Feature: Petstore PUT Features
       "name": "string"
     }
   ],
-  "status": "newStatusPutTest"
+  "status": "#(updatedStatus)"
 }
     """
 
@@ -37,9 +48,6 @@ Feature: Petstore PUT Features
     And request petBody
     When method put
     Then status 200
-
-    * print response
-
     * match response.id == petId
     * match response.name == updatedName
     * match response.status == updatedStatus

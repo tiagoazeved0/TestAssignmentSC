@@ -31,10 +31,8 @@ Feature: API Testing Petstore
     And request newUserBody
     When method post
     Then status 200
-
     * string userId = response.message
     * def numberUserId = parseInt(userId)
-
     * match response.code == 200
     * match response.type == 'unknown'
 
@@ -85,6 +83,5 @@ Feature: API Testing Petstore
     And request newUsersBodyArray
     When method post
     Then status 200
-
     * match response.code == 200
     * match response.type == 'unknown'

@@ -1,4 +1,4 @@
-Feature: User DELETE Features
+Feature: API Testing Petstore
 
   Background:
 
@@ -56,7 +56,7 @@ Feature: User DELETE Features
     When method delete
     Then status 200
     * match response.code == 200
-    * match response.type = "unknown"
+    * match response.type == "unknown"
 
     * print response
 

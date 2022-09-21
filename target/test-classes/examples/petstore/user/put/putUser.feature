@@ -1,4 +1,4 @@
-Feature: User PUT Features
+Feature: API Testing Petstore
 
   Background:
 
@@ -43,9 +43,6 @@ Feature: User PUT Features
     Given url baseUrl + 'user/login'
     When method get
     Then status 200
-
-    * print response
-
     * match response.code == 200
     * match response.type == "unknown"
     * match response.message contains "logged in"
@@ -73,8 +70,6 @@ Feature: User PUT Features
     When method put
     Then status 200
     * match response.code == 200
-    * match response.type = "unknown"
-
-    * print response
+    * match response.type == "unknown"
 
 

@@ -1,4 +1,4 @@
-Feature: User POST Features
+Feature: API Testing Petstore
 
 #  Background:
 #    * url 'https://petstore.swagger.io/v2/'
@@ -31,10 +31,8 @@ Feature: User POST Features
     And request newUserBody
     When method post
     Then status 200
-
     * string userId = response.message
     * def numberUserId = parseInt(userId)
-
     * match response.code == 200
     * match response.type == 'unknown'
 
@@ -85,6 +83,5 @@ Feature: User POST Features
     And request newUsersBodyArray
     When method post
     Then status 200
-
     * match response.code == 200
     * match response.type == 'unknown'

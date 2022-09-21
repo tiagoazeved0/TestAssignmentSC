@@ -56,7 +56,7 @@ Feature: API Testing Petstore
     When method delete
     Then status 200
     * match response.code == 200
-    * match response.type = "unknown"
+    * match response.type == "unknown"
 
     * print response
 

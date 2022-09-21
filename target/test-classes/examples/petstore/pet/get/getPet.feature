@@ -1,12 +1,11 @@
 @Pets
-Feature: Pets GET Features
+Feature: API Testing Petstore
 
   Background:
     * url 'https://petstore.swagger.io/v2/'
 
   Scenario: Get the information of the pet by using petId
 
-    # This flow consists in 2 HTTP Requests:
     # POST - Create a new Pet
     # GET - Get the created pet using petId
 
@@ -30,7 +29,6 @@ Feature: Pets GET Features
 
   Scenario: Get all the pets using the status value
 
-    # This flow consists in a single HTTP Request:
     # GET - Get all Pets by status
 
     * def status  = 'available'
