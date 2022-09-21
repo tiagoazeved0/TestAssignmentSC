@@ -79,6 +79,6 @@ You can also check the results uploaded in Calliope. Pro: https://app.calliope.p
 
 - The scenarios were all important to be comfortable with this technology, as well as reusing it for various features. Some behaviors of the Petstore Swagger API weren't ideal (e.g. being able to set IDs manually, as well as in different data types).
 
-- The next step of this project would be the successful integration of the Jenkins Pipeline with Calliope. pro, improvements in generated reports, UI Tests with cross-browser compatibility.
+- The next step of this project will be the integration of the Jenkins Pipeline with Calliope. pro, improvements in generated reports, UI Tests with cross-browser compatibility.
 
 *Tiago Azevedo, 2022*
