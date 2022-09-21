@@ -8,7 +8,7 @@ Feature: UI Testing Playground
 
   Scenario: UI Testing Playground - Feature 5 - AJAX Data - Loading data with AJAX request
 
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuOptionAjaxData)
     And sleep(2000)
     And click(playground.buttonTriggeringAJAXRequest)

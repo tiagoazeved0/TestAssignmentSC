@@ -6,13 +6,10 @@ Feature: UI Testing Playground
     * def playground = read('common.feature')
     * call playground
 
-#    * def windowName = 'UI Test Automation Playground'
+  Scenario: UI Testing Playground - Feature 7 - Click button that is ignoring the DOM Click Event
 
-  Scenario: UI Testing Playground - Feature 7 - Click
-
-#    * robot { window: '#(windowName)'}
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuOptionClick)
     And sleep(2000)
     And mouse().move(playground.buttonIgnoresDOMClickEvent).click()
-    And sleep(1000)
+    And sleep(2000)

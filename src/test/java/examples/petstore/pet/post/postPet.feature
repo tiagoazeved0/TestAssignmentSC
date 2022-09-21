@@ -2,7 +2,7 @@
 Feature: API Testing Petstore
 
   Background:
-    * url 'https://petstore.swagger.io/v2/'
+    * configure ssl = true
 
   Scenario: Create a Pet with Name and Status in Request Body
 
@@ -11,7 +11,7 @@ Feature: API Testing Petstore
     * def name = 'Kitty McGee'
     * def status = 'available'
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet'
     And request { name: '#(name)', status: '#(status)' }
     When method post
     Then status 200
@@ -25,7 +25,7 @@ Feature: API Testing Petstore
     * def name = 'Kitty McGee'
     * def status = 'available'
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet'
     And params { name: '#(name)', status: '#(status)' }
     When method post
     Then status 415
@@ -40,14 +40,14 @@ Feature: API Testing Petstore
     * def name = 'Kitty McGee'
     * def status = 'available'
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet'
     And request { name: '#(name)', status: '#(status)' }
     When method post
     Then status 200
     * match response.name == name
     * match response.status == status
     * def petId = response.id
-    Given path 'pet/' + petId
+    Given url baseUrl + 'pet/' + petId
     And form field name = 'Bobby Bobby'
     And form field status = 'newStatus'
     When method post
@@ -66,14 +66,14 @@ Feature: API Testing Petstore
     * def name = 'Kitty McGee'
     * def status = 'available'
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet'
     And request { name: '#(name)', status: '#(status)' }
     When method post
     Then status 200
     * match response.name == name
     * match response.status == status
     * def petId = response.id
-    Given path 'pet/' + petId + '/uploadImage'
+    Given url baseUrl + 'pet/' + petId + '/uploadImage'
     * multipart file file = { read: 'kitty.jpg', contentType: 'image/jpeg' }
     * multipart field message  = 'Hello!'
     When method post

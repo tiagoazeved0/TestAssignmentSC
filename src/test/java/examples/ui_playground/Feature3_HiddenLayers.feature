@@ -8,7 +8,7 @@ Feature: UI Testing Playground
 
   Scenario: UI Testing Playground - Feature 3 - HiddenLayers - Avoiding clicking the Green Button twice
 
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuOptionHiddenLayers)
     And sleep(2000)
     And click(playground.buttonGreenButton)

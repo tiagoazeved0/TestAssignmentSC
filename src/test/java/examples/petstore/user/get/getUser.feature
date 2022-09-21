@@ -1,6 +1,7 @@
 Feature: API Testing Petstore
 
   Background:
+    * configure ssl = true
 
   Scenario: Create a User and Login with Username and Password
 
@@ -117,7 +118,6 @@ Feature: API Testing Petstore
     Given url baseUrl + 'user/logout'
     When method get
     Then status 200
-    * print response
     * match response.code == 200
     * match response.type == "unknown"
     * match response.message contains "ok"

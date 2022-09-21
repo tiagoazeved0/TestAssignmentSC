@@ -6,9 +6,9 @@ Feature: UI Testing Playground
     * def playground = read('common.feature')
     * call playground
 
-  Scenario: UI Testing Playground - Feature 10 - Dynamic Table
+  Scenario: UI Testing Playground - Feature 10 - Finding specific value in a Dynamic Table
 
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuDynamicTable)
     And sleep(2000)
     * def firstValue = text(playground.valueDynamicTableChromeCPUValue)

@@ -8,11 +8,8 @@ Feature: UI Testing Playground
 
   Scenario: UI Testing Playground - Feature 1 - Dynamic ID - Clicking a button without recording its element by the Dynamic ID
 
-    # Sleep added for viewing purposes of proper behaviour
+    Given driver uitestingplaygroundUrl
 
-    Given driver "http://www.uitestingplayground.com/home"
-
-#    # A possible solution to create a flag to verify if button was clicked
 
 #    * def booleanLogic =
 #
@@ -36,3 +33,4 @@ Feature: UI Testing Playground
     * sleep(1000)
     And click(playground.buttonDynamicID)
     * sleep(1000)
+    * assert exists('{button}Button with Dynamic ID')

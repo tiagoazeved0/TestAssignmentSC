@@ -6,10 +6,11 @@ Feature: UI Testing Playground
     * def playground = read('common.feature')
     * call playground
 
-  Scenario: UI Testing Playground - Feature 8 - Text Input
+  Scenario: UI Testing Playground - Feature 8 - Text Input changing Button Text
 
-    * def newButtonText = 'WeWe'
-    Given driver "http://www.uitestingplayground.com/home"
+    * def newButtonText = 'New Text'
+
+    Given driver uitestingplaygroundUrl
     And click(playground.menuTextInput)
     And sleep(2000)
     And input(playground.caixaTextInput, newButtonText)

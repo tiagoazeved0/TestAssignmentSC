@@ -2,7 +2,7 @@
 Feature: API Testing Petstore
 
   Background:
-    * url 'https://petstore.swagger.io/v2/'
+    * configure ssl = true
 
   Scenario: Get the information of the pet by using petId
 
@@ -12,14 +12,14 @@ Feature: API Testing Petstore
     * def name = 'Bobby McGeee'
     * def status = 'available'
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet'
     And request { name: '#(name)', status: '#(status)' }
     When method post
     Then status 200
     * match response.name == name
     * match response.status == status
     * def createdPetId = response.id
-    Given path 'pet', createdPetId
+    Given url baseUrl + 'pet/' + createdPetId
     When method get
     Then status 200
     * match response.name == name
@@ -33,8 +33,7 @@ Feature: API Testing Petstore
 
     * def status  = 'available'
 
-    Given path 'pet/'
-    And path 'findByStatus'
+    Given url baseUrl + 'pet/' + 'findByStatus'
     And params {'status': '#(status)'}
     When method get
     Then status 200

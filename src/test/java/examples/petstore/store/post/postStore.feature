@@ -1,7 +1,7 @@
 Feature: API Testing Petstore
 
   Background:
-    * url 'https://petstore.swagger.io/v2/'
+    * configure ssl = true
 
   Scenario: Create a Pet and place an Order for that Pet
 
@@ -11,7 +11,7 @@ Feature: API Testing Petstore
     * def name = 'Kitty McGee'
     * def status = 'available'
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet/'
     And request { name: '#(name)', status: '#(status)' }
     When method post
     Then status 200
@@ -20,7 +20,7 @@ Feature: API Testing Petstore
     * def petId = response.id
     * def quantity = 1
     * def complete = true
-    Given path 'store', 'order'
+    Given url baseUrl + 'store/' + 'order'
     And request { petId: '#(petId)', quantity: '#(quantity)', complete: '#(complete)' }
     When method post
     Then status 200

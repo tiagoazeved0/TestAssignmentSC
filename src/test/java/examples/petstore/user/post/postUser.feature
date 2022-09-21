@@ -1,7 +1,7 @@
 Feature: API Testing Petstore
 
-#  Background:
-#    * url 'https://petstore.swagger.io/v2/'
+  Background:
+    * configure ssl = true
 
   Scenario: Create a User
 
@@ -14,7 +14,6 @@ Feature: API Testing Petstore
     * def email = Math.random().toString(36).substring(2,11) + '@gmail.com';
     * def password = Math.random().toString(36).slice(-8);
     * def phone = Math.floor(Math.random() * 1000000000);
-
     * def newUserBody =
     """
   {
@@ -36,7 +35,6 @@ Feature: API Testing Petstore
     * match response.code == 200
     * match response.type == 'unknown'
 
-
   Scenario: Create New Users from Given Array
 
     # POST - Create New Users from Given Array
@@ -55,8 +53,6 @@ Feature: API Testing Petstore
     * def email3 = Math.random().toString(36).substring(2,11) + '@gmail.com';
     * def password3 = Math.random().toString(36).slice(-8);
     * def phone3 = Math.floor(Math.random() * 1000000000);
-
-
     * def newUsersBodyArray =
     """
 [

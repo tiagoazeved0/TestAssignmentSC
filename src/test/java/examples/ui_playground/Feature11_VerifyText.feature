@@ -10,7 +10,7 @@ Feature: UI Testing Playground
 
     * def welcomeText = 'Welcome'
 
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuVerifyText)
     And sleep(2000)
     * match text(playground.textVerifyText) contains welcomeText

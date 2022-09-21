@@ -1,6 +1,7 @@
 Feature: API Testing Petstore
 
   Background:
+    * configure ssl = true
 
   Scenario: Delete an user using PUT request while being logged in
 
@@ -30,34 +31,27 @@ Feature: API Testing Petstore
     And request newUserBody
     When method post
     Then status 200
-
     * string userId = response.message
     * def numberUserId = parseInt(userId)
-
     * match response.code == 200
     * match response.type == 'unknown'
 
     # Logging in
 
-    * print baseUrl + 'user/login'
     Given url baseUrl + 'user/login'
     When method get
     Then status 200
-
-    * print response
-
     * match response.code == 200
     * match response.type == "unknown"
     * match response.message contains "logged in"
 
     # Deleting user
 
-    Given url baseUrl + /user/ + username
+    Given url baseUrl + 'user/' + username
     When method delete
     Then status 200
     * match response.code == 200
     * match response.type == "unknown"
 
-    * print response
 
 

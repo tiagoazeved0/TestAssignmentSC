@@ -8,7 +8,7 @@ Feature: UI Testing Playground
 
   Scenario: UI Testing Playground - Feature 6 - Client Side Delay
 
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuOptionClientSideDelay)
     And sleep(2000)
     And click(playground.buttonTriggeringClientSideDelay)

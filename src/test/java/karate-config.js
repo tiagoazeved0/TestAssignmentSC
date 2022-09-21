@@ -7,7 +7,9 @@ function fn() {
   var config = {
     env: env,
     baseUrl: 'https://petstore.swagger.io/v2/',
-    faker: Java.type('com.github.javafaker.Faker')
+    faker: Java.type('com.github.javafaker.Faker'),
+    uitestingplaygroundUrl: "http://www.uitestingplayground.com/home",
+    ssl: true
   }
   if (env == 'dev') {
     // customize

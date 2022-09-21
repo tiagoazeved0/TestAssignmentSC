@@ -6,10 +6,9 @@ Feature: UI Testing Playground
     * def playground = read('common.feature')
     * call playground
 
-  Scenario: UI Testing Playground - Feature 9 - Scroll Bars
+  Scenario: UI Testing Playground - Feature 9 - Scroll Bars And Hiding Button
 
-    * def newButtonText = 'WeWe'
-    Given driver "http://www.uitestingplayground.com/home"
+    Given driver uitestingplaygroundUrl
     And click(playground.menuScrollbars)
     And sleep(2000)
     And click(playground.caixaScroll)

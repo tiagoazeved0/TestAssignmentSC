@@ -2,7 +2,7 @@
 Feature: API Testing Petstore
 
   Background:
-    * url 'https://petstore.swagger.io/v2/'
+    * configure ssl = true
 
   Scenario: Create a Pet and Update it using PUT request
 
@@ -11,7 +11,8 @@ Feature: API Testing Petstore
 
     * def name = 'Kitty McGee'
     * def status = 'available'
-    Given path 'pet/'
+
+    Given url baseUrl + 'pet'
     And request { name: '#(name)', status: '#(status)' }
     When method post
     Then status 200
@@ -19,7 +20,6 @@ Feature: API Testing Petstore
     * match response.name == name
     * match response.status == status
     * def petId = response.id
-
     * def updatedName = 'PutTestNewName'
     * def updatedStatus = 'newStatusPutTest'
     * def petBody =
@@ -44,7 +44,7 @@ Feature: API Testing Petstore
 }
     """
 
-    Given path 'pet/'
+    Given url baseUrl + 'pet'
     And request petBody
     When method put
     Then status 200
