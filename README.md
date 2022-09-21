@@ -44,11 +44,7 @@ mvn clean test -Dtest=AllFeaturesRunner
 
 ### Running on Jenkins
 
-Plugins needed:
-
-- **Pipeline Maven Integration Plugin**
-
-After installing [Jenkins](https://www.jenkins.io/doc/book/installing/), you are ready to create the pipeline to run the tests. This can be done in the following way:
+After installing [Jenkins](https://www.jenkins.io/doc/book/installing/), and installing the suggested plugins in the first setup, you should be ready to create the pipeline to run the tests. This can be done in the following way:
 
 1. Go to **Dashboard** > **New Item**
 2. Choose **'Pipeline' Project** and give it a name
