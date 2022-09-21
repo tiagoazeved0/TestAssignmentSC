@@ -7,8 +7,8 @@ pipeline {
 			
 			UI = UI.toBoolean()
 			API = API.toBoolean()
-			API_KEY = "Yzc1OWQ4YTU1ZGZiYjkwNWUxYmIzMWM4ZjI1YjcwN2E4MGIwZWMyZmNkYjBkZjE4MWI4NGE5NzJmNjIxMTMxNjBi"
-			PROFILE_ID = "4497"
+			// API_KEY = <YOUR_API_KEY>
+			// PROFILE_ID = <YOUR_PROFILE_ID> - This is meant to be used for Calliope.Pro Integration in a future feature.
 			
 			}
                 checkout([$class: 'GitSCM', 
