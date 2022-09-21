@@ -71,7 +71,7 @@ You can also check the results uploaded in Calliope. Pro: https://app.calliope.p
 - Integration with Github, to manage the test scripts and publish them in Calliope.
 - Integration with Jenkins through a plugin, that allows for an easier setup of a post-stage of the reports to the Calliope profile.
 
-### Tech Assignment Development Feedback
+## Tech Assignment Development Feedback
 
 - My initial development process was working with Selenium and Cucumber, as those are the main technologies I have working with these past years. After reading documentation and articles about Automation Testing tools for API testing, in particular, I came across **Karate and how it has API test-automation, mocks, performance-testing and UI Automation** as a single framework. As a learning process and a challenge for myself, I decided to migrate my code to Karate and use it as my main framework for this project.
 
@@ -81,3 +81,4 @@ You can also check the results uploaded in Calliope. Pro: https://app.calliope.p
 
 - The next step of this project would be the successful integration of the Jenkins Pipeline with Calliope. pro, improvements in generated reports, UI Tests with cross-browser compatibility.
 
+*Tiago Azevedo, 2022*
