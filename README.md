@@ -5,7 +5,7 @@ A UI and API Automation Tests project was made for the technical process of the 
 ## Technologies Used
 
 This project requires:
-- **Java JDK (11/17)**
+- **Java JDK (versions [11](https://adoptium.net/temurin/releases/?version=11) or [17](https://adoptium.net/temurin/releases/?version=17))**
 - [Maven](https://maven.apache.org/install.html) - **Build Automation tool**
 - [Jenkins](https://www.jenkins.io/doc/book/installing/) - **Open Source CI Automation Server**
 - **IDE** of your choice
@@ -60,7 +60,7 @@ You can also check the results uploaded in Calliope. Pro: [Report](https://app.c
 ### Improvements and Features Feedback
 
 **Improvements**
-- Login and Register page should have elements in UI that makes them more distinct from eachother.
+- The login and register pages should have elements in UI that make them more distinct from each other.
 - On Reports Page, you should be able to select more than one report at the same time, to perform the same action for every report.
 - Documentation for Windows and Mac Users, with code examples.
 
@@ -72,10 +72,10 @@ You can also check the results uploaded in Calliope. Pro: [Report](https://app.c
 
 - My initial development process was working with Selenium and Cucumber, as those are the main technologies I have working with these past years. After reading documentation and articles about Automation Testing tools for API testing, in particular, I came across **Karate and how it has API test-automation, mocks, performance-testing and UI Automation** as a single framework. As a learning process and a challenge for myself, I decided to migrate my code to Karate and use it as my main framework for this project.
 
-- For UI tests, the idea was to see the capabilities of Karate as a UI Automation Tool and what I could achieve in just a few days of learning it from scratch. I managed to get the same results as I was getting with Selenium and Cucumber, but in a much faster and easier way of developing those tests, as well as documenting its results *(important to mention that I have added the sleep() behaviour between steps in order to visually verify the automation being done correctly)*
+- For UI tests, the idea was to see the capabilities of Karate as a UI Automation Tool and what I could achieve in just a few days of learning it from scratch. I managed to get the same results as I was getting with Selenium and Cucumber, but in a much faster and easier way of developing those tests, as well as documenting its results *(important to mention that I have added the sleep() behavior between steps to visually verify the automation being done correctly)*
 - For API tests, I found Karate to have a simpler syntax while describing the flows of the requests and responses, as well as the assertions to verify if the behavior is the intended one.
 
-- In my point of view, all scenarios were all important to be comfortable with this technology, as well as reusing it for various other features. I have noted that some behaviors of the Petstore Swagger API aren't ideal. *(e.g. being able to set IDs manually, as well as in different data types)*
+- In my point of view, all scenarios were important to be comfortable with this technology, as well as reusing it for various other features. I have noted that some behaviors of the Petstore Swagger API aren't ideal. *(e.g. being able to set IDs manually, as well as in different data types)*
 
 - The next step of this project will be the integration of the Jenkins Pipeline with Calliope.pro, improvements in generated reports, UI Tests with cross-browser compatibility, UI DOM Manipulation automated for assertions.
 
