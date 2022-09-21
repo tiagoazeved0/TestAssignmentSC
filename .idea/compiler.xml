@@ -13,7 +13,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TestAssignmentSC" options="-Werror" />
+      <module name="TestAssignmentSC" options="" />
       <module name="myproject" options="-Werror" />
     </option>
   </component>
