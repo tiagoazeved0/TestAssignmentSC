@@ -32,6 +32,6 @@
     "textVerifyText": "//span[contains(text(),'Welcome ')]",
     "buttonStart": "//button[contains(text(),'Start')]",
     "buttonStop": "//button[contains(text(),'Stop')]",
-    "progressBar": "//div[contains(@id,'progressBar')]"
+    "progressBar": "#progressBar"
   }
 }
