@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: examples.runners.AllFeaturesRunner
+-------------------------------------------------------------------------------
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 171.462 s - in examples.runners.AllFeaturesRunner
