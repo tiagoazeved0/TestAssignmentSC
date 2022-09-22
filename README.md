@@ -55,7 +55,7 @@ After installing [Jenkins](https://www.jenkins.io/doc/book/installing/) and the 
 
 After running the tests, reports will be generated with the results in the following formats - **.xml .txt .json** and **.html**. They are located at ~*target/karate-reports* *(for html and json-text)* and *target/surefire-reports* *(for xml results)*. Running the **mvn clean** command will **delete the target folder before the test runner execution**.
 
-You can also check the results uploaded in Calliope.Pro: [Report](https://app.calliope.pro/reports/148132/public/78eedbd2-a800-4ba0-9207-1bf69ffca3dd)
+You can also check the results uploaded in Calliope.Pro: [Report](https://app.calliope.pro/reports/148239/public/ed7bbdad-a507-4816-a966-2d87870e6d08)
 
 ### Improvements and Features Feedback
 
