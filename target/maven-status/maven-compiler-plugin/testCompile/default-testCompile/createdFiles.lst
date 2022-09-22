@@ -1,0 +1,3 @@
+examples\runners\AllFeaturesRunner.class
+examples\runners\APITestsRunner.class
+examples\runners\UITestsRunner.class
