@@ -8,6 +8,7 @@ Feature: UI Testing Playground
 
   Scenario: UI Testing Playground - Feature 1 - Dynamic ID - Clicking a button without recording its element by the Dynamic ID
 
+    # --- [ Scripts and Functions ] ----
 
     # Function to evaluate if the button element is clicked or not, using a flag attribute
     * def isClickedButton =
@@ -44,6 +45,9 @@ Feature: UI Testing Playground
     """
     "button.getAttribute('wasclicked');"
     """
+
+
+    # --- [ Test Flow ] ----
 
     Given driver uitestingplaygroundUrl
     And click(playground.menuOptionDynamicId)
