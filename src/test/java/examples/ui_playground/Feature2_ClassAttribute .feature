@@ -16,10 +16,40 @@ Feature: UI Testing Playground
 "window.actualAlert = window.alert; window.alert = function() { window.actualAlert('The blue button was pressed - btn-primary pressed!');}"
     """
 
-    # Change Alert Text
-    * def closePopUp =
+    # Function to evaluate if the button element is clicked or not, using a flag attribute
+    * def isClickedButton =
     """
-"var body = document.querySelector('body'); input(body, Key.ENTER);"
+    function isClicked() {
+     if (button.getAttribute('wasclicked') === 'false') {
+        button.setAttribute('wasclicked', 'true')
+      } else {
+        button.setAttribute('wasclicked', 'false')
+     }
+     }
+    """
+
+    # Find an element using the class attribute 'btn-primary'
+    * def findButtonElement =
+    """
+    "var button = document.querySelector('.btn-primary');"
+    """
+
+    # Set an attribute 'wasClicked' with a specific value 'false'
+    * def setButtonAttribute =
+    """
+    "button.setAttribute('wasclicked', 'false');"
+    """
+
+    # Add click event listener to a button
+    * def addButtonEventListener =
+    """
+    "button.addEventListener('click', isClicked);"
+    """
+
+    # Gets the value from attribute 'wasClicked'
+    * def getAttribute =
+    """
+    "button.getAttribute('wasclicked');"
     """
 
 
@@ -30,10 +60,13 @@ Feature: UI Testing Playground
     And click(playground.menuOptionClassAttribute)
     And sleep(1000)
     * script(changeAlertPopUp)
+    * script(findButtonElement)
+    * script(setButtonAttribute + isClickedButton)
+    * script(addButtonEventListener)
+    * assert script(getAttribute) == 'false'
     And click(playground.btnPrimaryButton)
-    And sleep(3000)
-#    * script(closePopUp)
-    And sleep(10000)
-
+    And sleep(2000)
+    * dialog(false)
+    * assert script(getAttribute) == 'true'
 
 
