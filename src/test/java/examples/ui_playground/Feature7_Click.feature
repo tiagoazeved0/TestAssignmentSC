@@ -8,13 +8,13 @@ Feature: UI Testing Playground
 
   Scenario: UI Testing Playground - Feature 7 - Click button that is ignoring the DOM Click Event
 
-    # Find an element using the class attribute 'btn-primary'
+    # Find an element using the id 'btn-primary'
     * def findButton =
     """
     "var button = document.querySelector('#badButton');"
     """
 
-    #
+    # Get the attribute 'class'
     * def getClassAttribute =
     """
     "var text = button.getAttribute('class');"
