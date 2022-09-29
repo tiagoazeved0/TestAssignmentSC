@@ -13,4 +13,5 @@ Feature: UI Testing Playground
     And sleep(2000)
     And click(playground.buttonTriggeringClientSideDelay)
     And retry(10).waitFor(playground.textboxDataClientSideDelay)
-    And sleep(1000)
+    And assert exists(playground.textboxDataClientSideDelay)
+
