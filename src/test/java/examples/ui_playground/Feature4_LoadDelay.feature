@@ -11,4 +11,4 @@ Feature: UI Testing Playground
     Given driver uitestingplaygroundUrl
     And click(playground.menuOptionLoadDelay)
     And waitFor(playground.buttonAppearingAfterDelay)
-    And sleep(2000)
+    And assert exists(playground.buttonAppearingAfterDelay)
