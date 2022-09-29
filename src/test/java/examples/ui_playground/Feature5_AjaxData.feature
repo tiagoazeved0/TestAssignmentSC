@@ -13,4 +13,4 @@ Feature: UI Testing Playground
     And sleep(2000)
     And click(playground.buttonTriggeringAJAXRequest)
     And retry(10).waitFor(playground.textboxDataLoadedAJAX)
-    And sleep(1000)
+    And assert exists(playground.textboxDataLoadedAJAX)
